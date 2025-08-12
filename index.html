@@ -25,28 +25,28 @@
             <p>Let's dive in!!</p>
             <form action="" method="post">
                 <div>
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="firstname" id="firstName">
+                    <label for="firstName">FIRST NAME<span aria-label="required">*</span></label>
+                    <input type="text" name="firstname" id="firstName" required>
                 </div>
                 <div>
                     <label for="lastName">LAST NAME</label>
                     <input type="text" name="lastname" id="lastName">
                 </div>
                 <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email">EMAIL<span aria-label="required">*</span></label>
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div>
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
+                    <input type="tel" name="phone" id="phone" pattern="\d{10}" maxlength="10">
                 </div>
                 <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <label for="password">PASSWORD<span aria-label="required">*</span></label>
+                    <input type="password" name="password" id="password" required minlength="8" maxlength="20">
                 </div>
                 <div>
-                    <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword">
+                    <label for="confirmPassword">CONFIRM PASSWORD<span aria-label="required">*</span></label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required minlength="8" maxlength="20">
                 </div>
             </form>
         </section>
