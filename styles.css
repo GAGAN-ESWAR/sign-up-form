@@ -25,13 +25,14 @@ body{
 
 .img{
     width: clamp(600px,40%,1000px);
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
 img[alt='wave rise at shore']{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .logo{
@@ -68,7 +69,7 @@ img[alt="Odin logo"]{
 .note{
     background-color: var(--bg-color,grey);
     padding: 40px;
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -99,7 +100,6 @@ form>div{
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
 input{
@@ -107,7 +107,7 @@ input{
     border: 1px solid black;
     border-radius: 3px;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     outline: none;
     font-size: medium;
 }
