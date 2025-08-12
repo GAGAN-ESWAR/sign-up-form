@@ -52,7 +52,7 @@ img[alt="Odin logo"]{
 
 .logo span{
     font-family: 'Norse',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    color: rgb(163, 213, 236);
+    color: rgb(49, 54, 56);
     font-size: clamp(40px,5rem,80px);
 }
 
@@ -68,7 +68,7 @@ img[alt="Odin logo"]{
 .note{
     background-color: var(--bg-color,grey);
     padding: 40px;
-    flex: auto;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -82,7 +82,7 @@ p{
 }
 
 .userinp{
-    padding: 20px 40px;
+    padding: 10px 40px 20px;
 }
 
 .userinp p{
@@ -124,4 +124,39 @@ input:focus{
 input:focus:invalid{
     box-shadow: 0 0 30px rgba(206, 52, 52, 0.3);
     border: 1px solid rgba(206, 52, 52, 0.3);
+}
+
+.submit{
+    flex: 1;
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 20px 40px;
+    box-shadow: inset 0 5px 10px rgba(50, 52, 53, 0.3);
+}
+
+button{
+    background-color: rgb(163, 213, 236);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover{
+    background-color: black;
+}
+
+.submit p{
+    font-size: medium;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(33, 99, 112);
+}
+
+a:hover{
+    color: rgb(121, 178, 224);
 }
